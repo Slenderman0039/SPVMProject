@@ -72,5 +72,14 @@ ipotizzare soluzioni specifiche.
 ## Technologies used
 JavaFX, Threads, SMTP, MariaDB
 
+## Mockup
+![img1](https://github.com/Slenderman0039/SPVMProject/blob/main/mockup/Autenticazione.JPG?raw=true)
+![img2](https://github.com/Slenderman0039/SPVMProject/blob/main/mockup/Dashboard_Impiegato.JPG?raw=true)
+![img3](https://github.com/Slenderman0039/SPVMProject/blob/main/mockup/Dashboard_Amministratore.JPG?raw=true)
+![img4](https://github.com/Slenderman0039/SPVMProject/blob/main/mockup/Turni.JPG?raw=true)
+![img5](https://github.com/Slenderman0039/SPVMProject/blob/main/mockup/ClickTurni.png?raw=true)
+<br>
+[...see more (End of document)](https://github.com/Slenderman0039/SPVMProject/blob/main/RAD.pdf) 
+
 ## Website
 [SPVMProject](https://spvmproject.github.io/)
