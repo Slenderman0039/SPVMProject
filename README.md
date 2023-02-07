@@ -5,6 +5,14 @@ __Project type:__ Software Engineering <br>
 __For:__ *University of Palermo* <br>
 __Developed in (period):__ 2022 - 2023 <br>
 __Credits:__ *[@Slenderman0039](https://github.com/Slenderman0039), [@JackalJo](https://github.com/jackaljo), [@AshenClock7613](https://github.com/AshenClock7613), [@JovenLD](https://github.com/JovenLD)* <br>
+<br>
+
+<p><a href="https://github.com/Slenderman0039"><img title="Slenderman0039" src="https://github.com/SPVMProject/spvmproject.github.io/blob/main/img2.png" height="64"/></a>
+<a href="https://github.com/jackaljo"><img title="JackalJo" src="https://github.com/SPVMProject/spvmproject.github.io/blob/main/img4.png?raw=true" height="64"/></a>
+<a href="https://github.com/JovenLD"><img title="JovenLD" src="https://github.com/SPVMProject/spvmproject.github.io/blob/main/img3.png" height="64"/></a>
+<a href="https://github.com/AshenClock7613"><img title="AshenClock7613" src="https://github.com/SPVMProject/spvmproject.github.io/blob/main/img1.png" height="64"/></a></p>
+
+
 
 ## Document
 ```
