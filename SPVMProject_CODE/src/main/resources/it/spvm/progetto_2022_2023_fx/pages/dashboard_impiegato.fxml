@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="392.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.spvm.progetto_2022_2023_fx.roles.employee.interfaces.DashboardImpiegato">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="50.0" style="-fx-background-color: #5764FF;">
+         <children>
+            <Pane layoutX="5.0" layoutY="346.0" prefHeight="34.0" prefWidth="40.0" style="-fx-background-radius: 10; -fx-background-color: rgba(255, 255, 255, 0.1);" stylesheets="@../../../../fontstyle.css">
+               <children>
+                  <ImageView fx:id="logout_button" fitHeight="26.0" fitWidth="40.0" layoutX="7.0" layoutY="7.0" onMouseClicked="#onLogout" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../assets/icons/logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </Pane>
+            <ImageView fitHeight="52.0" fitWidth="40.0" layoutX="5.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></Pane>
+      <Pane layoutX="50.0" prefHeight="400.0" prefWidth="134.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Text id="ruolo" fx:id="ruolo" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Impiegato" textAlignment="CENTER" wrappingWidth="134.4000000000001">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text id="cognome_title" fx:id="cognome_title" fill="#968c8c" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="{Cognome]" textAlignment="CENTER" wrappingWidth="134.4000000000001" />
+            <VBox layoutY="78.0" prefHeight="323.0" prefWidth="134.0" style="-fx-background-color: #e9e9e9;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="136.0" style="-fx-background-color: #D8D8D8;" text="☰ Menu" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#onModificaPassword" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="🢒 Modifica password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Calibri Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#onModificaTelefono" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="🢒 Modifica telefono">
+                     <font>
+                        <Font name="Calibri Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="modifica_iban" mnemonicParsing="false" onMouseClicked="#onModificaIban" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="🢒 Modifica IBAN">
+                     <font>
+                        <Font name="Calibri Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#onVisualizzaStipendio" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="🢒 Visualizza stipendio">
+                     <font>
+                        <Font name="Calibri Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#onVisualizzaTurni" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="🢒 Visualizza turni">
+                     <font>
+                        <Font name="Calibri Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onMouseClicked="#onRichiestaPermesso" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="🢒 Richiesta permesso">
+                     <font>
+                        <Font name="Calibri Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onMouseClicked="#onFirmaRemoto" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="🢒 Firma da remoto">
+                     <font>
+                        <Font name="Calibri Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Separator prefWidth="200.0" />
+                  <Pane prefHeight="29.0" prefWidth="134.0" style="-fx-background-color: #D8D8D8;" />
+               </children>
+               <padding>
+                  <Insets top="2.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+      <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="18.0" prefHeight="30.0" prefWidth="415.0" styleClass="label_autenticazione" stylesheets="@../../../../fontstyle.css" text="Account" textAlignment="CENTER">
+         <font>
+            <Font name="Bebas Neue Regular" size="31.0" />
+         </font>
+      </Label>
+      <Pane layoutX="534.0" layoutY="18.0" onMouseClicked="#showAccount" prefHeight="3.0" prefWidth="0.0" style="-fx-background-radius: 8; -fx-background-color: rgb(87, 100, 255);" stylesheets="@../../../../fontstyle.css">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="5.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/icons/user_account.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </Pane>
+      <StackPane fx:id="stackpane" layoutX="184.0" layoutY="67.0" prefHeight="334.0" prefWidth="415.0">
+         <children>
+            <Pane fx:id="main_pane" prefHeight="334.0" prefWidth="415.0">
+               <children>
+                  <Label id="iban" fx:id="iban" alignment="CENTER" layoutX="29.0" layoutY="311.0" prefHeight="18.0" prefWidth="358.0" text="IBAN: {IBAN}" />
+                  <Pane layoutX="22.0" layoutY="24.0" prefHeight="71.0" prefWidth="171.0" style="-fx-background-radius: 10; -fx-background-color: rgba(87, 100, 255,0.2);">
+                     <children>
+                        <TextField id="nome" fx:id="nome" alignment="CENTER" editable="false" layoutX="10.0" layoutY="36.0" promptText="{Nome}" style="-fx-background-color: white; -fx-border-width: 1; -fx-border-color: black; -fx-border-radius: 5;" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="171.0" text="Nome" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="224.0" layoutY="24.0" prefHeight="71.0" prefWidth="171.0" style="-fx-background-radius: 10; -fx-background-color: rgba(87, 100, 255,0.2);">
+                     <children>
+                        <TextField id="cognome" fx:id="cognome" alignment="CENTER" editable="false" layoutX="10.0" layoutY="36.0" promptText="{Cognome}" style="-fx-background-color: white; -fx-border-width: 1; -fx-border-color: black; -fx-border-radius: 5;" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="171.0" text="Cognome" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="21.0" layoutY="116.0" prefHeight="71.0" prefWidth="171.0" style="-fx-background-radius: 10; -fx-background-color: rgba(87, 100, 255,0.2);">
+                     <children>
+                        <TextField id="d_nascita" fx:id="d_nascita" alignment="CENTER" editable="false" layoutX="10.0" layoutY="36.0" promptText="{D_nascita}" style="-fx-background-color: white; -fx-border-width: 1; -fx-border-color: black; -fx-border-radius: 5;" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="171.0" text="Data di Nascita" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="223.0" layoutY="116.0" prefHeight="71.0" prefWidth="171.0" style="-fx-background-radius: 10; -fx-background-color: rgba(87, 100, 255,0.2);">
+                     <children>
+                        <TextField id="n_telefono" fx:id="n_telefono" alignment="CENTER" editable="false" layoutX="10.0" layoutY="36.0" promptText="{N_telefono}" style="-fx-background-color: white; -fx-border-width: 1; -fx-border-color: black; -fx-border-radius: 5;" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="171.0" text="Numero di Telefono" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="22.0" layoutY="205.0" prefHeight="71.0" prefWidth="171.0" style="-fx-background-radius: 10; -fx-background-color: rgba(87, 100, 255,0.2);">
+                     <children>
+                        <TextField id="servizio" fx:id="servizio" alignment="CENTER" editable="false" layoutX="10.0" layoutY="36.0" promptText="{Servizio}" style="-fx-background-color: white; -fx-border-width: 1; -fx-border-color: black; -fx-border-radius: 5;" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="171.0" text="Servizio" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="224.0" layoutY="205.0" prefHeight="71.0" prefWidth="171.0" style="-fx-background-radius: 10; -fx-background-color: rgba(87, 100, 255,0.2);">
+                     <children>
+                        <TextField id="mansione" fx:id="mansione" alignment="CENTER" editable="false" layoutX="10.0" layoutY="36.0" promptText="{Mansione}" style="-fx-background-color: white; -fx-border-width: 1; -fx-border-color: black; -fx-border-radius: 5;" />
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="171.0" text="Mansione" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Pane layoutX="217.0" layoutY="18.0" onMouseClicked="#controllaNotifiche" prefHeight="3.0" prefWidth="0.0" style="-fx-background-radius: 8; -fx-background-color: rgb(87, 100, 255);" stylesheets="@../../../../fontstyle.css">
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <children>
+            <ImageView fitHeight="20.0" onMouseClicked="#controllaNotifiche" fitWidth="20.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/icons/notification.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Separator layoutX="217.0" layoutY="64.0" prefHeight="3.0" prefWidth="346.0" />
+   </children>
+</AnchorPane>

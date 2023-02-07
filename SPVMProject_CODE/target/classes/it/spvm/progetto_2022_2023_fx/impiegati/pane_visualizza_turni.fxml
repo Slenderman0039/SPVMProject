@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.calendarfx.view.page.MonthPage?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MonthPage id="month_view" fx:id="month_view" layoutX="14.0" layoutY="14.0" prefHeight="549.0" prefWidth="499.0" style="-style1-entry: red;" />
+   </children>
+</Pane>

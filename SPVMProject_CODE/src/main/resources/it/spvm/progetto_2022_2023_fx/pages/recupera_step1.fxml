@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.spvm.progetto_2022_2023_fx.roles.user.password_recovery.interfaces.RecuperaPassword_s1">
+    <Pane prefHeight="423.0" prefWidth="583.0" VBox.vgrow="ALWAYS">
+      <children>
+         <Pane layoutX="38.0" layoutY="44.0" prefHeight="363.0" prefWidth="270.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+            <children>
+               <TextField id="email_recupero" fx:id="email_recupero" layoutX="53.0" layoutY="77.0" prefHeight="34.0" prefWidth="201.0" promptText="Email aziendale" />
+               <TextField id="codice_recupero" fx:id="codice_recupero" layoutX="53.0" layoutY="256.0" prefHeight="34.0" prefWidth="201.0" promptText="Codice" />
+               <Button layoutX="102.0" layoutY="128.0" lineSpacing="10.0" mnemonicParsing="false" onMouseClicked="#onSendCodeEmailClick" prefHeight="27.0" prefWidth="103.0" styleClass="button-invia_codice" stylesheets="@../../../../fontstyle.css" text="Invia codice" textFill="#f2f2f2">
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <Button layoutX="88.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#onConfirmCodeClick" prefHeight="27.0" prefWidth="103.0" styleClass="button_autenticazione" stylesheets="@../../../../fontstyle.css" text="Conferma" textFill="#f2f2f2">
+                  <font>
+                     <Font name="Calibri Bold" size="14.0" />
+                  </font>
+               </Button>
+               <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="17.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../assets/icons/mail_forgot.png" />
+                  </image>
+                  <effect>
+                     <ColorAdjust brightness="-0.46" contrast="-0.1" hue="-0.62" saturation="1.0" />
+                  </effect>
+               </ImageView>
+               <Label layoutX="53.0" layoutY="60.0" text="Email">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+               <Label layoutX="53.0" layoutY="239.0" text="Codice">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font></Label>
+               <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="17.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../assets/icons/key_forgot.png" />
+                  </image>
+                  <effect>
+                     <ColorAdjust brightness="-0.46" contrast="-0.1" hue="0.54" saturation="1.0" />
+                  </effect>
+               </ImageView>
+               <Label layoutX="53.0" layoutY="169.0" prefHeight="53.0" prefWidth="201.0" text="*Si prega di attendere qualche secondo per elaborare la richiesta." wrapText="true" />
+            </children>
+         </Pane>
+         <Pane layoutX="343.0" prefHeight="450.0" prefWidth="257.0" style="-fx-background-color: linear-gradient(to left,#155799,#159957);">
+            <children>
+               <Pane layoutX="169.0" layoutY="397.0" prefHeight="39.0" prefWidth="148.0" style="-fx-background-radius: 100; -fx-background-color: #F4F4F4;" />
+               <Label alignment="CENTER" contentDisplay="CENTER" layoutY="67.0" prefHeight="30.0" prefWidth="257.0" styleClass="label_forgot" stylesheets="@../../../../fontstyle.css" text=" CODICE DI RECUPERO" textFill="WHITE" />
+               <Label layoutX="13.0" layoutY="135.0" prefHeight="68.0" prefWidth="232.0" styleClass="label_forgot_list" stylesheets="@../../../../fontstyle.css" text="Inserisci la tua mail aziendale per ricevere il codice di recupero." textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+               <Label contentDisplay="CENTER" layoutX="13.0" layoutY="267.0" prefHeight="68.0" prefWidth="232.0" style="-fx-font-size: 15;" styleClass="label_project" stylesheets="@../../../../fontstyle.css" text="Inserisci il codice ricevuto nella corrispettiva box e clicca su 'Conferma'." textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                  <font>
+                     <Font name="Book Antiqua" size="12.0" />
+                  </font>
+               </Label>
+               <ImageView fitHeight="70.0" fitWidth="34.0" layoutX="116.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../assets/icons/mail_forgot.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="70.0" fitWidth="34.0" layoutX="116.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../assets/icons/key_forgot.png" />
+                  </image>
+               </ImageView>
+               <Pane layoutX="-48.0" layoutY="14.0" prefHeight="39.0" prefWidth="148.0" style="-fx-background-radius: 100; -fx-background-color: #F4F4F4;" />
+            </children>
+         </Pane>
+         <Label layoutX="140.0" layoutY="14.0" styleClass="label_autenticazione" stylesheets="@../../../../fontstyle.css" text="Step 1" />
+         <Label id="label_sistema" fx:id="label_sistema" alignment="CENTER" layoutX="57.0" layoutY="419.0" prefHeight="17.0" prefWidth="232.0" style="-fx-border-radius: 50; -fx-background-color: #F4F4F4;" text="Sistema:" />
+      </children></Pane>
+</VBox>

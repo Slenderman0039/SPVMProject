@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="394.0" prefWidth="514.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.spvm.progetto_2022_2023_fx.roles.user.password_recovery.interfaces.RecuperaPassword_s2">
+    <Pane prefHeight="349.0" prefWidth="514.0" VBox.vgrow="ALWAYS">
+        <children>
+            <Pane layoutX="7.0" layoutY="44.0" prefHeight="310.0" prefWidth="263.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+                <children>
+                    <PasswordField id="password_recupero" fx:id="password_recupero" layoutX="53.0" layoutY="77.0" onKeyTyped="#onTypePassword" prefHeight="34.0" prefWidth="201.0" promptText="Password" />
+                    <PasswordField id="confirm_password_recupero" fx:id="confirm_password_recupero" layoutX="53.0" layoutY="147.0" onKeyTyped="#onConfirmPassword" prefHeight="34.0" prefWidth="201.0" promptText="Conferma password" />
+                    <Button layoutX="88.0" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#OnConfirmButtonPassword" prefHeight="27.0" prefWidth="103.0" styleClass="button_autenticazione" stylesheets="@../../../../fontstyle.css" text="Conferma" textFill="#f2f2f2">
+                        <font>
+                            <Font name="Calibri Bold" size="14.0" />
+                        </font>
+                    </Button>
+                    <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="17.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../../assets/icons/password_forgot.png" />
+                        </image>
+                        <effect>
+                            <ColorAdjust brightness="-0.46" contrast="-0.1" hue="-0.62" saturation="1.0" />
+                        </effect>
+                    </ImageView>
+                    <Label layoutX="53.0" layoutY="60.0" text="Password">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font></Label>
+                    <Label layoutX="53.0" layoutY="130.0" text="Conferma password">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font></Label>
+                    <ImageView fitHeight="30.0" fitWidth="27.0" layoutX="17.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../../assets/icons/double_check_forgot.png" />
+                        </image>
+                        <effect>
+                            <ColorAdjust brightness="-0.46" contrast="-0.1" hue="0.54" saturation="1.0" />
+                        </effect>
+                    </ImageView>
+                  <Label id="sistema" fx:id="sistema" alignment="CENTER" layoutX="16.0" layoutY="279.0" prefHeight="17.0" prefWidth="232.0" style="-fx-border-radius: 50; -fx-background-color: #F4F4F4;" text="Sistema:" />
+                </children>
+            </Pane>
+            <Pane layoutX="282.0" prefHeight="394.0" prefWidth="232.0" style="-fx-background-color: linear-gradient(to left,#155799,#159957);">
+                <children>
+                    <Label alignment="CENTER" contentDisplay="CENTER" layoutY="67.0" prefHeight="30.0" prefWidth="232.0" styleClass="label_forgot" stylesheets="@../../../../fontstyle.css" text=" CODICE DI RECUPERO" textFill="WHITE" />
+                    <Label layoutX="15.0" layoutY="149.0" prefHeight="68.0" prefWidth="201.0" styleClass="label_forgot_list" stylesheets="@../../../../fontstyle.css" text="Inserisci e conferma la tua nuova password." textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+                    <ImageView fitHeight="70.0" fitWidth="34.0" layoutX="25.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../../assets/icons/password_forgot.png" />
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="70.0" fitWidth="34.0" layoutX="168.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../../../../assets/icons/double_check_forgot.png../../../../assets/icons/double_check_forgot.png" />
+                        </image>
+                    </ImageView>
+                    <Pane layoutX="64.0" layoutY="323.0" prefHeight="34.0" prefWidth="103.0" style="-fx-background-radius: 100; -fx-background-color: #F4F4F4;" />
+               <Label layoutX="92.0" layoutY="240.0" text="•••" textFill="WHITE">
+                  <font>
+                     <Font size="38.0" />
+                  </font>
+               </Label>
+                </children>
+            </Pane>
+            <Label layoutX="109.0" layoutY="14.0" styleClass="label_autenticazione" stylesheets="@../../../../fontstyle.css" text="Step 2" />
+
+        </children></Pane>
+</VBox>

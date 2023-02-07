@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url('assets/fonts/montserrat.ttf');
+}
+@font-face {
+    font-family: 'bebasneue';
+    src: url('assets/fonts/bebasneue.ttf');
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('assets/fonts/poppins.ttf');
+}
+
+.label_project {
+    -fx-font-family: 'montserrat';
+    -fx-font-size: 20;
+}
+.label_poppins {
+    -fx-font-family: 'poppins';
+}
+.label_montserrat{
+    -fx-font-family: 'montserrat';
+}
+
+.label_forgot_list {
+    -fx-font-family: 'bebasneue';
+    -fx-color: white;
+    -fx-font-size: 15;
+}
+
+.label_autenticazione {
+    -fx-font-family: 'montserrat';
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.label_forgot{
+    -fx-font-family: 'montserrat';
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(255, 0, 0, 0.2);
+}
+.button-invia_codice{
+-fx-background-color: #008CBA;
+-fx-border-radius: 10;
+-fx-letter-spacing: 5px;
+}
+
+.img-email{
+-fx-color: #00ff00;
+}
+
+.button_autenticazione{
+-fx-background-color: #4CAF50;
+-fx-border-radius: 10;
+}

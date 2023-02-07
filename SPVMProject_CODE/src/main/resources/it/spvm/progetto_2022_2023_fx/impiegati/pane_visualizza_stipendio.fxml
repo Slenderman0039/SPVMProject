@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="pane_ext" fx:id="pane_ext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.spvm.progetto_2022_2023_fx.roles.employee.interfaces.visualizza_stipendio_impiegato">
+   <children>
+      <Pane layoutX="114.0" layoutY="14.0" prefHeight="125.0" prefWidth="188.0" style="-fx-background-color: linear-gradient(#be93c5,#7bc6cc); -fx-background-radius: 30;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="14.0" layoutY="14.0" prefHeight="49.0" prefWidth="86.0" styleClass="label_poppins" stylesheets="@../../../../fontstyle.css" text="Ultimo accredito" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Poppins Medium" size="15.0" />
+               </font>
+            </Label>
+            <Pane layoutX="137.0" layoutY="11.0" prefHeight="35.0" prefWidth="37.0" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-background-radius: 10;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="-1.0" prefHeight="35.0" prefWidth="37.0" text="€" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Medium" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label fx:id="last_stipendio" layoutX="14.0" layoutY="72.0" styleClass="label_montserrat" stylesheets="@../../../../fontstyle.css" text="{last_stipendio}" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="28.0" />
+               </font>
+            </Label>
+            <Pane layoutX="132.0" layoutY="74.0" prefHeight="35.0" prefWidth="47.0" style="-fx-background-color: rgba(255, 255, 255, 0.1); -fx-background-radius: 10;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" prefHeight="35.0" prefWidth="53.0" text="{d}" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Medium" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></Pane>
+      <TableView fx:id="tabella_stipendio" layoutX="14.0" layoutY="186.0" prefHeight="134.0" prefWidth="389.0">
+
+      </TableView>
+   </children>
+</Pane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="282.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.spvm.progetto_2022_2023_fx.terminal.Terminale">
+   <children>
+      <Button layoutX="14.0" id="b_terminale_i" fx:id="b_terminale_i" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#onClickIngresso" prefHeight="74.0" prefWidth="198.0" styleClass="button_autenticazione" stylesheets="@../../../fontstyle.css" text="INGRESSO" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="238.0" layoutY="104.0" id="b_terminale_u" fx:id="b_terminale_u" mnemonicParsing="false" onMouseClicked="#onClickUscita" prefHeight="74.0" prefWidth="198.0" styleClass="button-invia_codice" stylesheets="@../../../fontstyle.css" text="USCITA" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="21.0" />
+         </font>
+      </Button>
+      <Pane prefHeight="55.0" prefWidth="451.0" style="-fx-background-color: linear-gradient(#67b26f,#4ca2cd);" stylesheets="@../../../fontstyle.css">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/images/logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="147.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label_poppins" text="TERMINALE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text id="current" fx:id="current" layoutX="22.0" layoutY="264.0" textAlignment="CENTER" wrappingWidth="407.20001792907715" />
+   </children>
+</AnchorPane>

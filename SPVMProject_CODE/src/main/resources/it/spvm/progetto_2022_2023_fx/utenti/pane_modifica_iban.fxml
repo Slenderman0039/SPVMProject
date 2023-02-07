@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.spvm.progetto_2022_2023_fx.roles.user.controls.modifica_iban_impiegato">
+   <children>
+      <Pane layoutX="76.0" layoutY="109.0" prefHeight="71.0" prefWidth="277.0" style="-fx-background-radius: 80; -fx-background-color: white; -fx-border-radius: 30;">
+         <children>
+            <Text layoutX="88.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserisci nuovo IBAN">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <TextField layoutX="90.0" layoutY="30.0" onKeyTyped="#anteprimaIBAN"  fx:id="new_iban_field" prefHeight="25.0" prefWidth="152.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="75.0" layoutY="109.0" prefHeight="71.0" prefWidth="70.0" style="-fx-background-color: linear-gradient(#67b26f,#4ca2cd); -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="52.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/icons/card_iban.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Button layoutX="76.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#clickConferma" prefHeight="25.0" prefWidth="277.0" styleClass="button_autenticazione" stylesheets="@../../../../fontstyle.css" text="CONFERMA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="76.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Attenzione: Si consiglia di rileggere l'IBAN prima dell'inserimento. Lunghezza IBAN 27 caratteri." textAlignment="JUSTIFY" wrappingWidth="277.0" />
+      <Text layoutX="76.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IBAN CORRENTE:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="93.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUOVO IBAN:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="181.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="{current_iban}" fx:id="current_iban" id="current_iban" />
+      <Text fx:id="new_iban" layoutX="181.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+   </children>
+</Pane>
